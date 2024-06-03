@@ -38,6 +38,66 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 - **5. SVC Predictions.ipynb**: Jupyter notebook for generating predictions using a Support Vector Classifier (SVC) model.
 - **requirements.txt**: List of dependencies.
 
+## Prérequis
+
+- Python 3.7 ou version supérieure
+- `virtualenv` (si ce n'est pas déjà installé, utilisez `pip install virtualenv`)
+
+## Installation
+
+1. **Cloner le dépôt**
+
+    ```bash
+    git clone <URL_DU_DEPOT>
+    cd <NOM_DU_DEPOT>
+    ```
+
+2. **Créer un environnement virtuel**
+
+    ```bash
+    python -m venv env
+    ```
+
+3. **Activer l'environnement virtuel**
+
+    - Sur Windows :
+
+        ```bash
+        .\env\Scripts\activate
+        ```
+
+    - Sur macOS/Linux :
+
+        ```bash
+        source env/bin/activate
+        ```
+
+4. **Installer les dépendances**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Lancer le Notebook
+
+1. **Assurez-vous que l'environnement virtuel est activé** (voir étape 3 ci-dessus).
+
+2. **Lancer Jupyter Notebook**
+
+    ```bash
+    jupyter notebook
+    ```
+
+3. **Ouvrir le notebook `2. data preparation.ipynb`**
+
+    Dans l'interface Jupyter, naviguez jusqu'à `2. data preparation.ipynb` et ouvrez-le.
+
+## Notes
+
+- Assurez-vous de suivre ces instructions dans l'ordre pour éviter tout problème de configuration.
+- Si vous rencontrez des problèmes, vérifiez que toutes les dépendances sont correctement installées et que l'environnement virtuel est activé.
+
+
 # Team Members
 - [Nour Amellouk](https://github.com/Amellouk-Nour)
 - [Zakaria Baou](https://github.com/zacharyb02)

@@ -1,15 +1,12 @@
 from flask import Flask, render_template, request
-
-import pandas as pd
 import joblib
+
+from constante import MODEL_PATH, VECTORIZER_PATH, FILE_PATH
 
 app= Flask(__name__)
 
-model = joblib.load(r'G:\NLP Projects\MitRA aTTACK\Notre projet\Models\ML Models\SVC.pkl')
-
-vectorizer = joblib.load(r'G:\NLP Projects\MitRA aTTACK\Notre projet\Models\ML Models\vectorizer.joblib')
-    
-FILE_PATH= 'index.html'
+model = joblib.load(MODEL_PATH)
+vectorizer = joblib.load(VECTORIZER_PATH)
 
 @app.route('/', methods=['GET'])
 def hello_world():
@@ -19,11 +16,11 @@ def hello_world():
 def predict():
     input_text = request.form['inputText']
     print(input_text)
-    text = [inputText]
+    text = [input_text]
     X = vectorizer.transform(text)
-    predictions = model.predict(X)
+    predictions = model.predict(X)[0]
     
-    return render_template(FILE_PATH, prediction="hello world")    
+    return render_template(FILE_PATH, prediction=predictions)
 
 if __name__ == "__main__":
-    app.run(port=80, debug=False)
+    app.run(host='0.0.0.0',port='80')

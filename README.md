@@ -6,7 +6,7 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 ![Alt text](img/1.png)
 
 ### NLP Pipeline
-![Alt text](img/2.png)
+![Alt text](img/2.PNG)
 
 ## Directory Structure
 

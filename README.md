@@ -48,8 +48,8 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 1. **Cloner le dépôt**
 
     ```bash
-    git clone <URL_DU_DEPOT>
-    cd <NOM_DU_DEPOT>
+    git clone https://github.com/zacharyb02/Mitre-attack.git
+    cd Mitre-attack
     ```
 
 2. **Créer un environnement virtuel**

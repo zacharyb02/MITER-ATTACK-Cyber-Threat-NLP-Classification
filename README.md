@@ -40,7 +40,7 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 
 ## Prérequis
 
-- Python 3.7 ou version supérieure
+- Python 3.9 ou version supérieure
 - `virtualenv` (si ce n'est pas déjà installé, utilisez `pip install virtualenv`)
 
 ## Installation

@@ -38,64 +38,65 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 - **5. SVC Predictions.ipynb**: Jupyter notebook for generating predictions using a Support Vector Classifier (SVC) model.
 - **requirements.txt**: List of dependencies.
 
-## Prérequis
+## Prerequisites
 
-- Python 3.9 ou version supérieure
-- `virtualenv` (si ce n'est pas déjà installé, utilisez `pip install virtualenv`)
+- Python 3.9 or higher
+- `virtualenv` (if not already installed, use `pip install virtualenv`)
 
 ## Installation
 
-1. **Cloner le dépôt**
+1. **Clone the repository**
 
     ```bash
     git clone https://github.com/zacharyb02/Mitre-attack.git
     cd Mitre-attack
     ```
 
-2. **Créer un environnement virtuel**
+2. **Create a virtual environment**
 
     ```bash
     python -m venv env
     ```
 
-3. **Activer l'environnement virtuel**
+3. **Activate the virtual environment**
 
-    - Sur Windows :
+    - On Windows:
 
         ```bash
         .\env\Scripts\activate
         ```
 
-    - Sur macOS/Linux :
+    - On macOS/Linux:
 
         ```bash
         source env/bin/activate
         ```
 
-4. **Installer les dépendances**
+4. **Install the dependencies**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-## Lancer le Notebook
+## Launch the Notebook
 
-1. **Assurez-vous que l'environnement virtuel est activé** (voir étape 3 ci-dessus).
+1. **Ensure the virtual environment is activated** (see step 3 above).
 
-2. **Lancer Jupyter Notebook**
+2. **Launch Jupyter Notebook**
 
     ```bash
     jupyter notebook
     ```
 
-3. **Ouvrir le notebook `2. data preparation.ipynb`**
+3. **Open the notebook `2. data preparation.ipynb`**
 
-    Dans l'interface Jupyter, naviguez jusqu'à `2. data preparation.ipynb` et ouvrez-le.
+    In the Jupyter interface, navigate to `2. data preparation.ipynb` and open it.
 
 ## Notes
 
-- Assurez-vous de suivre ces instructions dans l'ordre pour éviter tout problème de configuration.
-- Si vous rencontrez des problèmes, vérifiez que toutes les dépendances sont correctement installées et que l'environnement virtuel est activé.
+- Make sure to follow these instructions in order to avoid any configuration issues.
+- If you encounter any problems, verify that all dependencies are installed correctly and that the virtual environment is activated.
+
 
 
 # Team Members

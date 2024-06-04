@@ -15,7 +15,6 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 - **Raw Data**: Contains raw data files.
 - **Final.csv**: The final dataset used for training and evaluation.
 
-### Deployment
 
 ### Deployment
 Pour déployer ce projet sur Heroku en utilisant Git, suivez les étapes ci-dessous :

@@ -16,6 +16,61 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 - **Final.csv**: The final dataset used for training and evaluation.
 
 ### Deployment
+
+### Deployment
+Pour déployer ce projet sur Heroku en utilisant Git, suivez les étapes ci-dessous :
+
+1. Accédez au répertoire de déploiement :
+```sh
+    cd "DEPLOYMENT"
+```
+
+2. Installez Git et le Heroku CLI en suivant la documentation officielle :
+Prérequis : [Prérequis : Installer Git et le Heroku CLI](https://devcenter.heroku.com/categories/command-line)
+
+3. Ajoutez un fichier heroku.yml dans le dossier contenant le contenu de votre projet. Pour plus de détails, consultez la documentation de Heroku :
+[Construire des images Docker avec heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
+
+4.Connectez-vous à votre compte Heroku :
+
+```sh
+    heroku login
+```
+
+5. Créez un nouveau repo sur Heroku pour votre projet :
+```sh
+    heroku create <Votre-nom-APP>
+```
+
+6. Configurez Heroku pour utiliser des conteneurs Docker :
+```sh
+    heroku stack:set container
+
+```
+
+7. Changez la branche par défaut en main :
+```sh
+    git branch -M main
+```
+
+8. lancer git add . et puis commit
+
+9. Poussez les changements sur Heroku, ce qui lancera automatiquement le build du Docker Compose :
+```sh
+    git push heroku main
+```
+
+
+Assurez-vous que toutes les étapes sont suivies correctement pour garantir un déploiement réussi de votre application sur Heroku.
+et cas d'erreure lors du build vous pouvez accéder au log avec :
+
+```sh
+    heroku logs --tail
+```
+
+10.tree details:
+
+
 - **Model**: Directory containing the model files.
 - **static/styles**: Directory for static stylesheets.
 - **templates**: Directory for HTML templates.

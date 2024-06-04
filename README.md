@@ -15,54 +15,52 @@ Our end-of-year project aims to develop a methodology for classifying cyber thre
 - **Raw Data**: Contains raw data files.
 - **Final.csv**: The final dataset used for training and evaluation.
 
+## Deployment with Git
 
-### Deployment
-Pour déployer ce projet sur Heroku en utilisant Git, suivez les étapes ci-dessous :
+To deploy this project on Heroku using Git, follow the steps below:
 
-1. Accédez au répertoire de déploiement :
+1. Navigate to the deployment directory:
 ```sh
     cd "DEPLOYMENT"
 ```
 
-2. Installez Git et le Heroku CLI en suivant la documentation officielle :
-Prérequis : [Prérequis : Installer Git et le Heroku CLI](https://devcenter.heroku.com/categories/command-line)
+2. Install Git and the Heroku CLI by following the official documentation:
+Prérequis : [Prerequisites:Install Git and the Heroku CLI](https://devcenter.heroku.com/categories/command-line)
 
-3. Ajoutez un fichier heroku.yml dans le dossier contenant le contenu de votre projet. Pour plus de détails, consultez la documentation de Heroku :
-[Construire des images Docker avec heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
+3. Add a heroku.yml file in the folder containing your project content. For more details, consult the Heroku documentation:
+[Build Docker Images with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
 
-4.Connectez-vous à votre compte Heroku :
+4.Log in to your Heroku account:
 
 ```sh
     heroku login
 ```
 
-5. Créez un nouveau repo sur Heroku pour votre projet :
+5. Create a new repo on Heroku for your project:
 ```sh
     heroku create <Votre-nom-APP>
 ```
 
-6. Configurez Heroku pour utiliser des conteneurs Docker :
+6. Configure Heroku to use Docker containers:
 ```sh
     heroku stack:set container
 
 ```
 
-7. Changez la branche par défaut en main :
+7. Change the default branch to main:
 ```sh
     git branch -M main
 ```
 
-8. lancer git add . et puis commit
+8. Stage all files and commit the changes:
 
-9. Poussez les changements sur Heroku, ce qui lancera automatiquement le build du Docker Compose :
+9. Push the changes to Heroku, which will automatically launch the Docker Compose build:
 ```sh
     git push heroku main
 ```
 
 
-Assurez-vous que toutes les étapes sont suivies correctement pour garantir un déploiement réussi de votre application sur Heroku.
-et cas d'erreure lors du build vous pouvez accéder au log avec :
-
+Make sure all steps are followed correctly to ensure a successful deployment of your application on Heroku. If there is an error during the build, you can access the logs with:
 ```sh
     heroku logs --tail
 ```

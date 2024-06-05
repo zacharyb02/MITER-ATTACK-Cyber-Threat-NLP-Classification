@@ -27,9 +27,9 @@
             </div>
             
             <div class="element1">
-                <a href="/about">
+                <a href="/">
                     <button class="btn">
-                        <div>About Project</div>
+                        <div>main page</div>
                         <svg fill="none" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
                       <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"></path>
                       <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M4 12.0601H14.17"></path>
@@ -42,22 +42,20 @@
             
         </div>
     </header>
-    <div class="container">
-        <h1>Search for a technique</h1>
-        <form id="predictionForm" action="/predict" method="POST">
-            <label for="inputText">Give a technique to research</label>
-            <input type="text" id="inputText" name="inputText" required>
-            <button class="button" type="submit">search</button>
-        </form>
-        <div id="predictionResult">
-            <h2>The technique found :</h2>
-            {% if prediction %}
-                <p id="predictedValue">{{ prediction }}. For more details, click <a href="https://attack.mitre.org/techniques/{{ prediction }}/">here</a></p>
-            {% else %}
-                <p id="predictedValue">Unable to find a technique.</p>
-            {% endif %}
-
-        </div>
+    <div class="project-container">
+        <h1>Classification des Cybermenaces avec l'IA</h1>
+        
+        <h2>Réalisé par</h2>
+        <p>Nour Amellouk et Zakaria Baou</p>
+        
+        <h2>Description du Projet</h2>
+        <p>Notre projet consiste à classifier les cybermenaces en utilisant un outil d'IA basé sur les données du framework MITRE ATT&CK. Nous avons extrait et structuré les données en groupant les tactiques, techniques et sous-techniques en fichiers JSON.</p>
+        
+        <h2>Encadrant</h2>
+        <p>Mr. HAMLAOUI</p>
+        
+        <h2>Remerciements</h2>
+        <p>Nous tenons à exprimer notre profonde gratitude à notre encadrant, Mr. HAMLAOUI, pour son soutien et ses conseils précieux tout au long de ce projet. Nous tenons également à le remercier pour son implication à expliquer aux étudiants durant les cours, son abnégation et sa pédagogie inspirante.</p>
     </div>
 </body>
 </html>

@@ -1,14 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
+body{
+    background-color: #faf6f6;
+    
+}
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-height: 10%;
+    align-items: center;
+}
+.logo{
+    width: 160px;
+    margin-left: 30px;
+}
+.frame1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 180px;
+    justify-content: center;
+    margin: 1%;
+}
+
+.frame1 h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #E74C3C;
+    margin: 0%;
+    padding: 0%;
+}
+.frame1 h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #313131;
+    margin: 0%;
+    padding: 0%;
+    line-height: 18px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.About{
+    width: 79px;
+    height: 22px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #505050;
+}
+.Work{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #E74C3C;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 21px;
+    gap: 10px;
+    background-color: transparent;
+    width: 180px;
+    height: 42px;
+    border: 2px solid #E74C3C;
+    border-radius: 31px;
+    margin-right: 10%;
+}
+
 .container {
     width: 100%;
     max-width: 600px;
-    margin: 50px auto;
+
+    margin: 150px auto 50px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -37,7 +133,7 @@ input[type="text"] {
     border-radius: 4px;
 }
 
-button {
+.button {
     padding: 10px;
     background-color: #28a745;
     color: white;
@@ -46,7 +142,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #218838;
 }
 
@@ -62,4 +158,168 @@ button:hover {
 #predictedValue {
     font-size: 1.2em;
     color: #555;
+}
+.element{
+    width: 150px;
+}
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+    margin-left: auto;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+
+  .element1{
+    width: 250px;
+  }
+
+  .btn {
+    --color: #ffcd39;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .btn div {
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: var(--color);
+    border-radius: 2rem;
+    color: black;
+    padding: 1rem;
+  }
+  
+  .btn::before {
+    content: '';
+    z-index: -1;
+    background-color: var(--color);
+    border: 2px solid black;
+    border-radius: 2rem;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(10deg);
+    transition: .5s;
+    opacity: 0.2;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+  }
+  
+  .btn:hover::before {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  
+  .btn svg {
+    transform: translateX(-200%);
+    transition: .5s;
+    width: 0;
+    opacity: 0;
+  }
+  
+  .btn:hover svg {
+    width: 25px;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+  .btn:active {
+    filter: brightness(1.4);
+  }
+
+  .project-container {
+    
+    width: 80%;
+    margin: 200px auto 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    height: fit-content;
+}
+
+.project-container h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-container h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.project-container p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.project-container p#predictedValue {
+    font-weight: bold;
+}
+
+.project-container a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project-container a:hover {
+    text-decoration: underline;
 }

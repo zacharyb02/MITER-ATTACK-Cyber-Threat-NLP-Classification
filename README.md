@@ -152,7 +152,7 @@ et cas d'erreure lors du build vous pouvez accéder au log avec :
 - If you encounter any problems, verify that all dependencies are installed correctly and that the virtual environment is activated.
 
 ## Screenshot web applicationn
-![Alt text](img/3.png)
+![Alt text](img/3.PNG)
 
 # Team Members
 - [Nour Amellouk](https://github.com/Amellouk-Nour)

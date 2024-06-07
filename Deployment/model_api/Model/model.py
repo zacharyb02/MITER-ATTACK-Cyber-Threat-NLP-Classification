@@ -13,7 +13,7 @@ vectorizer = joblib.load(VECTORIZER_PATH)
 
 
 def predict_pipeline(text):
-    X = vectorizer.transform(text)
+    X = vectorizer.transform([text])
     predictions = model.predict(X)[0]
     return predictions
 

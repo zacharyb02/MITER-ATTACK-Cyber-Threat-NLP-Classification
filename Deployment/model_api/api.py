@@ -22,4 +22,5 @@ def home():
 @app.post("/predict", response_model = PredictionOutput)
 def predict(technique:TextInput):
     techPredicted= predict_pipeline(technique.text)
-    return {"technique" : techPredicted}
+    
+    return {"techniquePredicted" : techPredicted}

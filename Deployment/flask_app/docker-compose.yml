@@ -1,0 +1,51 @@
+version: "3.8"
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+    networks:
+      - reseau1
+    depends_on:
+      - mongodb
+    command: sh -c "exec gunicorn -w 4 -b 0.0.0.0:80 wsgi:app"
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+      MONGO_INITDB_DATABASE: tactic
+    ports:
+      - "27017:27017"
+    volumes:
+      - database-data:/data/db
+    networks:
+      - reseau1
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: mogo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGODB_USER}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGODB_PASSWORD}
+      ME_CONFIG_MONGODB_SERVER: mongodb
+    networks:
+      - reseau1
+    depends_on:
+      - mongodb
+
+networks:
+  reseau1:
+
+volumes:
+  database-data:

@@ -1,15 +1,15 @@
-{
+[{
     "tactic-name": "nom",
     "ID":"id",
-    "tactic": "description",
+    "tactic": ["description"],
     "technique" :{
         "technique-name": "nom",
         "technique-ID": "id",
-        "technique-description":"description",
+        "technique-description":["description"],
         "sub-technique":[{
             "number": "id",
             "sub-technique-name": "nom",
-            "sub-technique-description": "description"
+            "sub-technique-description": ["description"]
         }]
     }
-}
+}]

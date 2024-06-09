@@ -4,7 +4,6 @@ WORKDIR /app
 COPY . /app
 RUN pip install -r requirements.txt
 
-COPY tactic.json /app/tactic.json
 
 
 ENV PORT 80

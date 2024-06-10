@@ -50,11 +50,17 @@
             <button class="button" type="submit">search</button>
         </form>
         <div id="predictionResult">
-            <h2>The technique found :</h2>
+            
             {% if prediction %}
-                <p id="predictedValue">{{ prediction }}. For more details, click <a href="https://attack.mitre.org/techniques/{{ prediction }}/">here</a></p>
+                <h2>{{tactic_name}}</h2>
+                {% for tactic in tactic_info %}
+                <p>{{ tactic }}</p>
+                {% endfor %}
+                <p id="predictedValue">For more details, click <a href="https://attack.mitre.org/techniques/{{ prediction }}/">here</a></p>
+
             {% else %}
-                <p id="predictedValue">Unable to find a technique.</p>
+            <h2>The technique found :</h2>
+            <p id="predictedValue">Unable to find a technique.</p>
             {% endif %}
 
         </div>

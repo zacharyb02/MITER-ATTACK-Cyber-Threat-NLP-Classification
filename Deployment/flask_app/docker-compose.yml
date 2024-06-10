@@ -15,7 +15,7 @@ services:
     command: sh -c "exec gunicorn -w 4 -b 0.0.0.0:80 wsgi:app"
 
   mongodb:
-    image: mongo:latest
+    image: mongo
     container_name: mongodb
     restart: unless-stopped
     environment:

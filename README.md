@@ -2,8 +2,11 @@
 
 Our end-of-year project aims to develop a methodology for classifying cyber threats using the NLP (Natural Language Processing) approach of the MITRE ATT&CK framework. By combining machine learning algorithms and transformers, the goal is to create a system capable of efficiently analyzing and categorizing various cyber threats. This approach will enable a better understanding of potential attacks, as well as a faster and more precise identification of security measures to implement.
 
-### Project's architecture
+### Project's architecture v1.0.0
 ![Alt text](img/1.png)
+
+### Application' Architecture  v1.3.0
+![Alt text](img/archi.jpg)
 
 ### NLP Pipeline
 ![Alt text](img/2.PNG)

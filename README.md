@@ -153,8 +153,9 @@ Make sure all steps are followed correctly to ensure a successful deployment of 
 - If you encounter any problems, verify that all dependencies are installed correctly and that the virtual environment is activated.
 
 ## Screenshot web applicationn
-![Alt text](img/3.PNG)
+![Alt text](img/3.png)
 
 # Team Members
 - [Nour Amellouk](https://github.com/Amellouk-Nour)
 - [Zakaria Baou](https://github.com/zacharyb02)
+- [Mahmoud El Hamlaoui](https://github.com/ELHAMLAOUI)
